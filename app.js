@@ -8,7 +8,7 @@ angular.module('LunchCheck',[])
 
 function LunchCheckController($scope){
   $scope.food = "";
-  $scope.message = "hello";
+  $scope.message = "";
 
 
 //a function that split user input into different substrings
