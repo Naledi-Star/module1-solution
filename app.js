@@ -13,14 +13,16 @@ function LunchCheckController($scope){
 
 //a function that split user input into different substrings
   $scope.foodList = function(){
-    var foodItems = $scope.food.split(",");
+    let foodItems = $scope.food.split(",");
 
-    //check number of items
-    if (foodItems.length <= 3){
-      $scope.message = "Enjoy";
-    }
+    if ($scope.food === "") {
+      $scope.message = "Please enter your food first";
+    } 
+    else if (foodItems.length > 0 && foodItems.length <= 3) {
+      $scope.message = "Enjoy!";
+    } 
     else {
-      $scope.message = "Too much"
+      $scope.message = "Too much!";
     }
   }
 
