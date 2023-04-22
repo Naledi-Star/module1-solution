@@ -4,6 +4,8 @@
     <title>Lunch Checker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <script src="angular.min.js"></script>
+
     <style>
       .message { font-size: 1.3em; font-weight: bold; }
     </style>
@@ -18,7 +20,7 @@
              class="form-control" ng-model = "food">
          </div>
          <div class="form-group">
-             <button class="btn btn-default" ng-cick="foodList()">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="foodList()">Check If Too Much</button>
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
@@ -27,6 +29,7 @@
          </div>
           
    </div>
+   <script src="app.js"></script>
 
 </body>
 </html>
